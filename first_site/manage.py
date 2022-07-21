@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+# главный административный файл в проекте
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_site.settings')
