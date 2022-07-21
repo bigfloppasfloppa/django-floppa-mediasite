@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+    <head>
+        <title>Энциклопедия медиа</title>
+        <link rel="icon" href="https://img.icons8.com/color/344/globe-earth.png" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="media-nav">
+                <a class="nav-link" href="/media">Главная</a>
+                <a class="nav-link" href="books">Книги</a>
+                <a class="nav-link" href="movies">Фильмы</a>
+                <a class="nav-link" href="music">Музыка</a>
+                <a class="nav-link" href="games">Игры</a>
+                <input style="margin-left: 10%; display: inline;" name="search" id="" cols="30" rows="10" placeholder="Поиск по сайту..."></input>
+                <input type="submit" value="Поиск" >
+            </nav>
+        </header>
+        <main>
+            <h1>Привет!</h1>
+            <a class="top-button" href="#">^</a>
+            <p style="font-size: 48px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia libero adipisci esse quam, doloremque commodi suscipit quae nulla, voluptate cupiditate voluptas eligendi ab autem pariatur molestias soluta magni ipsa natus! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt delectus quisquam maiores officia, ex unde similique soluta adipisci voluptates laboriosam suscipit illo alias laudantium distinctio quidem odio? Autem, ducimus esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nostrum voluptate, vero fuga eligendi esse reiciendis assumenda perspiciatis distinctio. Delectus, ex. Atque eum rerum tenetur optio quas modi adipisci aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio voluptatem eius, magnam repellendus et doloribus qui aliquid voluptas alias assumenda consequatur facere, eligendi nisi iusto totam ab. Laborum, voluptatum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea alias aliquam consectetur ratione, placeat quisquam, eligendi distinctio officia suscipit accusamus ab mollitia, iure culpa sapiente inventore voluptatibus quidem quae rem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque velit ut labore, odio impedit illo aliquam dolorem deleniti doloribus voluptates porro praesentium debitis ex reiciendis nam corrupti sint ipsa aspernatur.</p>
+            
+        </main>
+        <footer>
+            <a class="footer-link mail-link" href="mailto:okoyom@inbox.ru">Почта<br><span>okoyom@inbox.ru</span></a>
+            <a class="footer-link tel-link" href="tel:+79313064245">Телефон<br><span>+79313064245</span></a>
+            <a class="footer-link tg-link" href="http://t.me/okoyom">Телеграм<br><span>okoyom</span></a>
+            <input style="width: 40%; margin-left: 10%;" name="feedback" id="" cols="30" rows="10" placeholder="Добавьте ваш отзыв здесь..."></input>
+            <input type="submit" value="Отправить" >
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% load static %} <!--загрузка статических файлов-->
+
+<html>
+    <head>
+        <meta charset="utf-8" lang="ru, en"/> <!--кодировка страницы-->
+        <title>Главная страница</title> <!--title - тег названия страницы-->
+        <link rel="stylesheet" href="{% static 'style.css' %}"/> <!--привязка стилей-->
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a class="nav-link" href="/">На главную</a>
+                <a class="nav-link" href="#">Большой шлёпа</a>
+                <a class="nav-link" href="/pelmeni">Рецепт пельменей</a> <!--пустая ссылка на страничку-->
+            </nav>
+        </header>
+        <main>
+            <h1 class="floppa_heading">{{floppa_h1}}</h1>
+            <p class="floppa_text">{{floppa_p}}</p>
+            <img class="floppa_image" src="https://a.d-cd.net/Q1UTKB7e-NUYa9vuvICsrTdsda4-960.jpg" alt=""/>
+            <img class="floppa_image" src="{% static 'floppa2.png' %}" alt=""/>
+        </main>
+        <footer></footer>
+    </body>
+</html>

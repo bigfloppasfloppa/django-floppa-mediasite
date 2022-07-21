@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+    <head>
+        <title>Игры</title>
+        <link rel="icon" href="https://img.icons8.com/office/344/controller.png" type="image/x-icon">
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    </head>
+
+    <body>
+        <header>
+            <nav class="media-nav">
+                <a class="nav-link" href="/media">Главная</a>
+                <a class="nav-link" href="books">Книги</a>
+                <a class="nav-link" href="movies">Фильмы</a>
+                <a class="nav-link" href="music">Музыка</a>
+                <a class="nav-link" href="games">Игры</a>
+                <input style="margin-left: 10%; display: inline;" name="search" id="" cols="30" rows="10" placeholder="Поиск по сайту..."></input>
+                <input type="submit" value="Поиск" >
+            </nav>
+        </header>
+        <main>
+            <h1>Игры</h1>
+            <a class="top-button" href="#">^</a>
+            <section>
+                {% for igra in igry %}
+                    <p>{{igra.title}}, {{igra.year}}</p>
+                    <p>{{igra.description}}</p>
+                    <hr>
+                {% endfor %}
+            </section>
+        </main>
+        <footer>
+            <a class="footer-link mail-link" href="mailto:okoyom@inbox.ru">Почта</a>
+            <a class="footer-link tel-link" href="tel:+79313064245">Телефон</a>
+            <a class="footer-link tg-link" href="http://t.me/okoyom">Телеграм</a>
+            <input style="width: 40%; margin-left: 10%;" name="feedback" id="" cols="30" rows="10" placeholder="Добавьте ваш отзыв здесь..."></input>
+            <input type="submit" value="Отправить" >
+        </footer>
+    </body>
+</html>

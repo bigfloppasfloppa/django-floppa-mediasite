@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- страничка рецепта приготовления пельменей -->
+<html>
+    <head>
+        <title>Рецепт пельменей</title>
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a class="nav-link" href="/">На главную</a>
+                <a class="nav-link" href="/floppa">Большой шлёпа</a>
+                <a class="nav-link" href="#">Рецепт пельменей</a> <!--пустая ссылка на страничку-->
+            </nav>
+        </header>
+        <main>
+            <h2 class="pelmeni_heading">{{pelmeni_h2}}</h2>
+            <!-- iframe - рамка для встаиваемого контента -->
+            <iframe class="pelmeni_video" width="50%" height="315" src="https://www.youtube.com/embed/oBWuSgS0NHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <!--два вида списков - нумерованный и маркированный-->
+            <ul class="pelmeni_spisok"> <!--unordered list - маркированный список-->
+                Рецепт хороших пельменей
+                <li class="pelmeni_spisok_item">Сперва выкладываем великолепный рубленый фарш (масло, масло)</li>
+                <li class="pelmeni_spisok_item">Лук (лук), сладких сортов для вызывания бульончика (и вкусно)</li>
+                <li class="pelmeni_spisok_item">С добавлением сливочного масла</li>
+                <li class="pelmeni_spisok_item">Готовим тонкое яичное тесто и перец, совсем немного</li>
+                <li class="pelmeni_spisok_item">Много мяса, мало теста</li>
+            </ul>
+        </main>
+        <footer>
+            <div class="footer_form">
+                <p class="footer_text">Оставьте отзыв!</p>
+                <textarea class="footer_feedback" type="text" placeholder="оаоаоа ммм..."></textarea>
+            </div>
+        </footer>
+    </body>
+
+</html>
